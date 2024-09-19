@@ -1086,145 +1086,94 @@ courses
 --------------------------------------------- 
 */
 
+/* Set a white background for the section */
 section.our-courses {
-  background-image: url(../images/meetings-bg.jpg);
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 140px;
-  padding-bottom: 130px;
+  background-color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
+/* Content background remains white */
 .our-courses .item .down-content {
   background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 8px;
 }
 
-.our-courses .item .down-content h4 {
-  padding: 25px;
-  font-size: 18px;
+/* Style the heading */
+.our-courses .section-heading h2 {
   color: #1f272b;
-  text-align: center; 
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+/* Heading for each founder */
+.our-courses .item .down-content h4 {
+  padding: 15px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
   border-bottom: 1px solid #eee;
 }
 
-.our-courses .item .down-content .info {
-  padding: 25px;
+/* Style the paragraph content */
+.our-courses .item .down-content p {
+  padding: 10px;
+  font-size: 14px;
+  color: #555;
+  text-align: left;
+  line-height: 1.6;
 }
 
-.our-courses .item .down-content .info ul li {
-  display: inline-block;
-  margin-right: 1px;
-}
-
+/* Social media icons (optional improvement) */
 .our-courses .item .down-content .info ul li i {
   color: #f5a425;
-  font-size: 14px;
+  font-size: 16px;
 }
 
-.our-courses .item .down-content .info span {
-  color: #a12c2f;
-  font-size: 15px;
-  font-weight: 600;
-  text-align: right;
-  display: inline-block;
-  width: 100%;
-}
-
-.our-courses .owl-nav {
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-45px);
-}
-
-.our-courses .owl-dots {
-  display: inline-block;
-  text-align: center;
-  width: 100%;
-  margin-top: 40px;
-}
-
-.our-courses .owl-dots .owl-dot {
-  transition: all .5s;
-  width: 7px;
-  height: 7px;
+/* Navigation arrows */
+.our-courses .owl-nav .owl-prev,
+.our-courses .owl-nav .owl-next {
   background-color: #fff;
+  color: #333;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.our-courses .owl-nav .owl-prev:hover,
+.our-courses .owl-nav .owl-next:hover {
+  background-color: #f5a425;
+  color: #fff;
+}
+
+/* Dots */
+.our-courses .owl-dots .owl-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
   margin: 0px 5px;
   border-radius: 50%;
-  outline: none;
+  transition: background-color 0.3s ease;
 }
 
 .our-courses .owl-dots .active {
-  width: 24px;
-  height: 8px;
-  border-radius: 4px;
-}
-    
-.our-courses .owl-nav .owl-prev{
-  margin-right: 10px;
-  outline: none;
-  position: absolute;
-  left: -80px;
+  background-color: #f5a425;
 }
 
-.our-courses .owl-nav .owl-prev span,
-.our-courses .owl-nav .owl-next span {
-  opacity: 0;
-}
-
-.our-courses .owl-nav .owl-prev:before {
-  display: inline-block;
-  font-family: 'FontAwesome';
-  color: #1e1e1e;
-  font-size: 25px;
-  font-weight: 700;
-  content: '\f104';
-  background-color: #fff;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  line-height: 50px;
-}
-
-.our-courses .owl-nav .owl-prev {
-  opacity: 1;
-  transition: all .5s;
-}
-
-.our-courses .owl-nav .owl-prev:hover {
-  opacity: 0.9;
-}
-
-.our-courses .owl-nav .owl-next {
-  opacity: 1;
-  transition: all .5s;
-}
-
-.our-courses .owl-nav .owl-next:hover {
-  opacity: 0.9;
-}
-
-.our-courses .owl-nav .owl-next{
-  margin-left: 10px;
-  outline: none;
-  position: absolute;
-  right: -85px;
-}
-
-.our-courses .owl-nav .owl-next:before {
-  display: inline-block;
-  font-family: 'FontAwesome';
-  color: #1e1e1e;
-  font-size: 25px;
-  font-weight: 700;
-  content: '\f105';
-  background-color: #fff;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  line-height: 50px;
+/* Make sure the images are styled properly */
+.our-courses .item img {
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  height: auto;
 }
 
 
