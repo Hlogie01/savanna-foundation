@@ -892,34 +892,28 @@ upcoming meetings
 */
 
 section.upcoming-meetings {
-  background-image: url(../images/meetings-bg.jpg);
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: white; /* White background */
   padding-top: 230px;
   padding-bottom: 110px;
 }
 
-section.upcoming-meetings .section-heading {
-  text-align: center;
-}
-
-section.upcoming-meetings .categories {
-  background-color: #fff;
-  border-radius: 20px;
-  padding: 40px;
-  margin-right: 45px;
+section.upcoming-meetings .section-heading h2 {
+  color: #1f272b; /* Dark color for visibility */
+  font-size: 36px; /* Increase font size if needed */
+  font-weight: bold;
 }
 
 section.upcoming-meetings .categories h4 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #1f272b;
-  margin-bottom: 30px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
+  color: #1f272b; /* Ensure the category heading is also visible */
 }
+
+/* Ensure other text elements are visible against the white background */
+section.upcoming-meetings .categories ul li a,
+.meeting-item .down-content h4,
+.meeting-item .down-content p {
+  color: #1f272b; /* Dark color for text */
+}
+
 
 section.upcoming-meetings .categories ul li {
   display: inline-block;
@@ -1026,6 +1020,26 @@ apply now
 ---------------------------------------------
 */
 
+#about-savanna-junior-foundation {
+  background-color: #f9f9f9; /* Light background to distinguish section */
+  padding: 60px 0; /* Padding for vertical spacing */
+}
+
+#about-savanna-junior-foundation .section-heading h2 {
+  font-size: 36px; /* Large font size for heading */
+  color: #1f272b; /* Dark color for heading */
+  text-align: center; /* Center align the text */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+#about-savanna-junior-foundation .section-heading p {
+  font-size: 18px; /* Slightly larger font for paragraph */
+  color: #666; /* Lighter color for readability */
+  text-align: center; /* Center align the paragraph */
+  max-width: 800px; /* Limit paragraph width */
+  margin: 0 auto; /* Center horizontally */
+}
+
 #content .heading-block {
   margin-bottom: 20px;
   text-align: center;
@@ -1051,7 +1065,7 @@ apply now
   font-size: 16px;
   color: #666;
   line-height: 1.8;
-  text-align: left; /* Change from justify to left-aligned */
+  text-align: center; /* Change from justify to left-aligned */
 }
 
 /* Flexbox setup to keep columns in one line */
